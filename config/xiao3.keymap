@@ -6,30 +6,29 @@
 
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        QTY {
             bindings = <
-&kp ESC   &kp Q      &kp W      &kp E      &kp R     &kp T        &kp Y    &kp U     &kp I      &kp O      &kp P     &kp MINUS
-&kp TAB   &kp A      &kp S      &kp D      &kp F     &kp G        &kp H    &kp J     &kp K      &kp L      &kp SEMI  &kp APOS
-&kp CAPS  &kp Z      &kp X      &kp C      &kp V     &kp B        &kp N    &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp BSLH
-                     &kp F2     &kp F5                                               &kp DEL    &kp C
-          &kp SPACE  &kp LSHFT  &kp ENTER  &kp LALT  &kp LCTRL    &kp SQT  &kp LGUI  &kp BSPC   &kp SPACE  &kp ESC
+&kp ESC   &kp Q        &kp W      &kp E      &kp R     &kp T        &kp Y    &kp U     &kp I      &kp O      &kp P     &kp MINUS
+&kp TAB   &kp A        &kp S      &kp D      &kp F     &kp G        &kp H    &kp J     &kp K      &kp L      &kp SEMI  &kp APOS
+&kp CAPS  &kp Z        &kp X      &kp C      &kp V     &kp B        &kp N    &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp BSLH
+                       &kp F2     &kp F5                                               &kp DEL    &kp C
+          &lt 1 SPACE  &kp LSHFT  &kp ENTER  &kp LALT  &kp LCTRL    &kp SQT  &kp LGUI  &kp BSPC   &kp SPACE  &kp ESC
             >;
         };
 
-        layer_1 {
+        LWR {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans       &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &trans  &trans  &trans  &trans  &trans       &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans       &trans
-                          &trans        &trans                                                      &trans  &trans
-            &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &bootloader
+&kp LS(TILDE)  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp MINUS
+&kp GRAVE      &kp N1         &kp N2        &kp N3         &kp N4        &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp PLUS
+&kp DEL        &kp LS(TILDE)  &kp GRAVE     &kp LS(PIPE)   &kp LS(LBRC)  &kp LBKT         &kp RBKT       &kp LS(RBRC)  &kp MINUS     &kp EQUAL     &kp PLUS      &kp EQUAL
+                              &kp LS(LBRC)  &kp LBKT                                                                   &kp RBKT      &kp LS(RBRC)
+               &trans         &kp SPACE     &kp BSPC       &kp LALT      &kp LCTRL        &kp SQT        &kp DEL       &kp RET       &kp SPACE     &trans
             >;
         };
 
