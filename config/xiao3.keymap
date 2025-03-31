@@ -34,11 +34,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans       &kp LCTRL     &kp LCTRL      &kp LS(LCTRL)  &kp LSHFT      &kp LC(Y)  &kp HOME       &kp END        &kp PG_UP      &kp PG_DN    &trans
-&trans  &kp LC(A)    &kp LC(S)     &kp LC(X)      &kp LC(C)      &kp LC(V)      &kp LEFT   &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT    &kp F12
-&trans  &kp LC(Z)    &kp LC(I)     &kp LC(B)      &kp LC(F)      &kp LC(RET)    &kp RET    &kp LG(LCTRL)  &kp LG(LCTRL)  &kp LG(LCTRL)  &kp LGUI     &kp LEFT
-                     &trans        &trans                                                                 &kp RIGHT      &kp LG(LSHFT)
-        &kp LC(TAB)  &kp LEFT_ALT  &kp LC(LS(O))  &kp LC(LS(K))  &trans         &trans     &trans         &trans         &trans         &bootloader
+&trans  &trans       &kp LCTRL     &kp LC(PRINTSCREEN)  &kp LS(LCTRL)  &kp LSHFT      &kp LC(Y)  &kp HOME       &kp END           &kp PG_UP          &kp PG_DN    &trans
+&trans  &kp LC(A)    &kp LC(S)     &kp LC(X)            &kp LC(C)      &kp LC(V)      &kp LC(H)  &kp LEFT       &kp DOWN          &kp UP             &kp RIGHT    &kp F12
+&trans  &kp LC(Z)    &kp LC(I)     &kp LC(B)            &kp LC(F)      &kp LC(RET)    &trans     &kp LG(LCTRL)  &kp LG(LCTRL)     &kp LG(LCTRL)      &kp LGUI     &kp LEFT
+                     &trans        &trans                                                                       &kp LS(LG(LEFT))  &kp LG(LS(RIGHT))
+        &kp LC(TAB)  &kp LEFT_ALT  &kp LC(LS(O))        &kp LC(LS(K))  &trans         &trans     &trans         &trans            &trans             &bootloader
             >;
         };
 
