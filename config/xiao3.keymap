@@ -52,13 +52,13 @@
             >;
         };
 
-        layer_4 {
+        CLMRK {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans                                    &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp ESC   &kp Q   &kp W   &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp MINUS
+&kp TAB   &kp A   &kp R   &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O     &kp APOS
+&kp CAPS  &kp Z   &kp X   &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                  &kp F2  &kp F5                                    &kp DEL    &trans
+          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans   &trans
             >;
         };
     };
