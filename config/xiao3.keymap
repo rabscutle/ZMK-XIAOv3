@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        CURPASS {
+            bindings = <&kp A>;
+            key-positions = <42 2 3 5 13 8 30>;
+            layers = <3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,7 +42,7 @@
             >;
         };
 
-        layer_2 {
+        RSE {
             bindings = <
 &trans  &trans       &kp LCTRL      &kp LC(PRINTSCREEN)  &kp LS(LCTRL)  &kp LSHFT      &kp LC(Y)  &kp HOME  &kp END           &kp PG_UP          &kp PG_DN  &trans
 &trans  &kp LC(A)    &kp LC(S)      &kp LC(X)            &kp LC(C)      &kp LC(V)      &kp LC(H)  &kp LEFT  &kp DOWN          &kp UP             &kp RIGHT  &kp F12
@@ -42,7 +52,7 @@
             >;
         };
 
-        layer_3 {
+        ADJ {
             bindings = <
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F11  &kp F12  &trans
