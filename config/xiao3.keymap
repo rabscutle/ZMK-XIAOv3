@@ -9,13 +9,28 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
+    combos { compatible = "zmk,combos"; };
 
-        CURPASS {
-            bindings = <&kp A>;
-            key-positions = <42 2 3 5 13 8 30>;
-            layers = <3>;
+    macros {
+        CURPASS: CURPASS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp P &kp P &kp E &kp R &kp T &kp A &kp I &kp N &kp I &kp N &kp G &kp LS(M) &kp O &kp N &kp E &kp Y &kp DLLR &kp N9>;
+            label = "CURPASS";
+        };
+
+        RABS: RABS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp A &kp B &kp S &kp C &kp U &kp T &kp L &kp E>;
+            label = "RABS";
+        };
+
+        PKH: PKH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp K &kp H &kp T &kp E &kp X &kp A &kp S &kp AT &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp M>;
+            label = "PKH";
         };
     };
 
